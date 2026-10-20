@@ -1,0 +1,110 @@
+/* External CSS */
+
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* General page styling */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #fcf5d8;
+  color: #3b1d2b;
+  line-height: 1.6;
+}
+
+/* Navigation */
+nav.top-menu {
+  background-color: #39172e;
+}
+
+nav.top-menu ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 0px;
+  margin: 0;
+  padding: 0;
+  flex-wrap: wrap;
+}
+
+nav.top-menu a {
+  display: block;
+  padding: 15px 25px;
+  color: #c3ecfc;
+  text-decoration: none;
+  font-size: 16px;
+  white-space: nowrap;
+}
+.cat img {
+    width: 50px;
+    height: 50px;
+    object-fit:cover;
+}
+nav.top-menu a:hover {
+  background-color: #72315c;
+  color: white;
+}
+
+/* Page heading */
+.heading {
+  text-align: center;
+  padding: 20px;
+  font-size: 20px;
+  font-family: Arial, sans-serif;
+}
+
+.heading h1 {
+  font-size: 2rem;
+}
+
+/* Container */
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding-bottom: 40px;
+}
+
+/* Intro text */
+.intro {
+  text-align: center;
+  max-width: 800px;
+  margin: 15px auto 30px;
+}
+
+/* Info sections */
+.info-section {
+  background-color: #8a69a0;
+  margin: 25px auto;
+  padding: 25px;
+  border-radius: 12px;
+  max-width: 900px;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+  border: 1px solid #674270;
+  color: #e8f0f8;
+}
+
+.info-section h2 {
+  color: #cde3f8;
+  margin-bottom: 12px;
+}
+
+.info-section p,
+.info-section li {
+  color: #fff9d6;
+  margin-bottom: 10px;
+}
+
+.info-section ul,
+.info-section ol {
+  margin-left: 25px;
+}
+.cat-image {
+  width: 70px;
+    height: 70px;
+    border-radius: 15px;
+    position:absolute;
+}
