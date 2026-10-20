@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="styles.css" >
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Profile</title>
+</head>
+<body>
+    <nav class="top-menu">
+<ul>
+<li><a href="index.html">Home</a></li>
+<li><a href="rankings.html">Rankings</a></li>
+<li><a href="compare.html">Compare</a></li>
+<li><a href="safeuse.html">Safe use</a></li>
+<li><a href="contact.html">Contact Us</a></li>
+<li><a href="profile.html">Sign In</a></li>
+</ul>
+    </nav>
+<main class="container">
+  <div class="heading">
+    <h1>Sign In</h1>
+  </div>
+
+  <section class="info-section">
+    <form id="loginForm" class="contact-form">
+      <label>Username</label>
+      <input type="text" id="username">
+
+      <label>Password</label>
+      <input type="password" id="password">
+
+      <button type="submit">Login</button>
+    </form>
+
+    <p id="loginMessage"></p>
+  </section>
+</main>
+<script>
+const loginForm = document.getElementById("loginForm");
+
+loginForm.addEventListener("submit", function (e) {
+  e.preventDefault();
+
+  const user = document.getElementById("username").value;
+  const pass = document.getElementById("password").value;
+  const msg = document.getElementById("loginMessage");
+
+  if (user === "" || pass === "") {
+    msg.textContent = "Please enter username and password.";
+    msg.style.color = "red";
+  } else {
+    msg.textContent = "Login successful (demo only).";
+    msg.style.color = "green";
+  }
+});
+</script>
+</body>
